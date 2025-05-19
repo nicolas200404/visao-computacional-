@@ -1,4 +1,5 @@
 # visao-computacional-
+Descrição do Projeto
 1. Acesse o Teachable Machine: Vá para o site do Teachable Machine.
 
 2. Crie um Novo Projeto: Clique em "Get Started" ou "Novo Projeto". Escolha o tipo de projeto que melhor se adapta à sua tarefa de classificação de objetos (geralmente "Image Project").
@@ -25,3 +26,28 @@ Selecione a opção "Keras" se você deseja obter o modelo em formato H5 para us
 Parte 2: Verificar a Acurácia no Código Python
 
 Agora, vamos ao código Python para carregar o modelo treinado e verificar sua acurácia. Para fazer isso de forma precisa, você precisará de um conjunto de dados separado que o modelo nunca viu durante o treinamento. Este conjunto de dados é chamado de conjunto de teste.
+
+Instruções de Instalação 
+
+Python: Certifique-se de ter o Python instalado no seu computador. Recomenda-se usar a versão 3.x. Você pode verificar se o Python está instalado abrindo um terminal ou prompt de comando e digitando:
+
+Instruções de Uso
+Treinamento no Teachable Machine:
+
+Acessar o site e criar um projeto de imagem.
+Definir as classes dos objetos que você quer identificar.
+Coletar e fornecer diversas imagens de exemplo para cada classe.
+Treinar o modelo.
+Testar o modelo na interface web.
+Exportar o modelo, preferencialmente no formato TensorFlow Lite (.tflite) e baixar o arquivo de rótulos (labels.txt).
+Verificação da Acurácia em Python:
+
+Instalar as bibliotecas: tensorflow, numpy e Pillow (pip install tensorflow numpy Pillow).
+Editar o script Python:
+Fornecer os caminhos corretos para o arquivo .tflite e labels.txt.
+Se quiser avaliar a acurácia, organizar imagens de teste em uma pasta e atualizar o dicionário ground_truth com os nomes dos arquivos e suas classes verdadeiras.
+Executar o script Python: python evaluate_model.py (ou python3).
+Interpretar os resultados: O script mostrará as classificações para imagens individuais (se essa parte for usada) ou a acurácia geral do modelo no conjunto de avaliação, indicando a porcentagem de previsões corretas.
+
+Creditos 
+Processado no laboratorio da Ufopa
